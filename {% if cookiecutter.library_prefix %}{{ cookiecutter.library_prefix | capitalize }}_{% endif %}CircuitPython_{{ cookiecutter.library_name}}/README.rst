@@ -84,8 +84,7 @@ To install for current user:
     {% if cookiecutter.library_prefix -%}
     pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
     {% else -%}
-    pip3 install circuitpython-{{ pypi_name }}
-    {% endif -%}
+    pip3 install circuitpython-{{ pypi_name }}{% endif %}
 
 To install system-wide (this may be required in some cases):
 
@@ -93,8 +92,7 @@ To install system-wide (this may be required in some cases):
     {% if cookiecutter.library_prefix -%}
     sudo pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
     {% else -%}
-    sudo pip3 install circuitpython-{{ pypi_name }}
-    {% endif -%}
+    sudo pip3 install circuitpython-{{ pypi_name }}{% endif %}
 
 To install in a virtual environment in your current project:
 
