@@ -81,18 +81,18 @@ PyPI <https://pypi.org/project/{%- if cookiecutter.library_prefix -%}{{ cookiecu
 To install for current user:
 
 .. code-block:: shell
-    {%- if cookiecutter.library_prefix -%}
+    {% if cookiecutter.library_prefix -%}
     pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
-    {%- else -%}
+    {% else -%}
     pip3 install circuitpython-{{ pypi_name }}
     {%- endif -%}
 
 To install system-wide (this may be required in some cases):
 
 .. code-block:: shell
-    {%- if cookiecutter.library_prefix -%}
+    {% if cookiecutter.library_prefix -%}
     sudo pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
-    {%- else -%}
+    {% else -%}
     sudo pip3 install circuitpython-{{ pypi_name }}
     {%- endif -%}
 
@@ -103,9 +103,9 @@ To install in a virtual environment in your current project:
     mkdir project-name && cd project-name
     python3 -m venv .env
     source .env/bin/activate
-    {%- if cookiecutter.library_prefix -%}
+    {% if cookiecutter.library_prefix -%}
     pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
-    {%- else -%}
+    {% else -%}
     pip3 install circuitpython-{{ pypi_name }}
     {%- endif -%}
 
