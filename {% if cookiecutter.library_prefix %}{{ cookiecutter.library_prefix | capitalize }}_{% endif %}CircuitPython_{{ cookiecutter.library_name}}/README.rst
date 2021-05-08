@@ -81,6 +81,7 @@ PyPI <https://pypi.org/project/{%- if cookiecutter.library_prefix -%}{{ cookiecu
 To install for current user:
 
 .. code-block:: shell
+
     {% if cookiecutter.library_prefix %}
     pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
     {% else -%}
@@ -89,6 +90,7 @@ To install for current user:
 To install system-wide (this may be required in some cases):
 
 .. code-block:: shell
+
     {% if cookiecutter.library_prefix %}
     sudo pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
     {% else -%}
