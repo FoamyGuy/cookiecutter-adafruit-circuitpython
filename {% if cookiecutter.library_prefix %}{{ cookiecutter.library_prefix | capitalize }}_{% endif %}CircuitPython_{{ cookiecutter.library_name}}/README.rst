@@ -107,7 +107,7 @@ To install in a virtual environment in your current project:
     pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
     {% else -%}
     pip3 install circuitpython-{{ pypi_name }}
-    {% endif %}
+    {% endif -%}
 
 {% endif %}
 
