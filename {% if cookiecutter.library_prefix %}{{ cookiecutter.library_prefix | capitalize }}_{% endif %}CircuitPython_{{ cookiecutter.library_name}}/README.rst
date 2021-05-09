@@ -101,10 +101,7 @@ To install in a virtual environment in your current project:
     mkdir project-name && cd project-name
     python3 -m venv .env
     source .env/bin/activate
-    {% if cookiecutter.library_prefix -%}
-    pip3 install {{ cookiecutter.library_prefix }}-circuitpython-{{ pypi_name }}
-    {% else -%}
-    pip3 install circuitpython-{{ pypi_name }}{% endif %}
+    pip3 install {% if cookiecutter.library_prefix -%}{{ cookiecutter.library_prefix }}-{% endif -%}circuitpython-{{ pypi_name }}
 
 {% endif %}
 
